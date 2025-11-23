@@ -16,13 +16,7 @@ namespace vsite::oop::v2
 		double green;
 		double blue;
 	public:
-		color() {	// constructor za null vrijednos
-			set_red(0);
-			set_green(0);
-			set_blue(0);
-		}
-		
-		color(double r, double g, double b) {// constructor sa inicijalnim vrijednostima
+		color(double r = 0, double g = 0, double b = 0) {// constructor sa deafault vrijednostima
 			set_red(r);
 			set_green(g);
 			set_blue(b);

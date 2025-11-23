@@ -1,6 +1,9 @@
 #include <iostream>
 #include <format>
 #include "app.h"
+std::string to_hex(int n) {
+	return std::format("{:X}", n);
+}
 
 int main()
 {
@@ -21,7 +24,6 @@ int main()
 
 	vsite::oop::v2::color c(r,g,b);
 
-	std::cout << std::format("RGB vrijednost boje je: #{:06X}\n", c.get_color_ref());
-	return 0;
 
+	std::cout << std::format("RGB vrijednost boje je: #{}\n", to_hex(c.get_color_ref()));
 }
